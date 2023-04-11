@@ -1,6 +1,9 @@
 package com.mrretro.bonelands;
 
 import com.mojang.logging.LogUtils;
+import com.mrretro.bonelands.block.ModBlocks;
+import com.mrretro.bonelands.item.ModCreativeModeTabs;
+import com.mrretro.bonelands.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -46,6 +49,9 @@ public class TheBonelands
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+        ModBlocks.registor(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -70,17 +76,17 @@ public class TheBonelands
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-        if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS)
-            event.accept(EXAMPLE_BLOCK_ITEM);
+        if (event.getTab() == CreativeModeTabs.INGREDIENTS){
+
+        }
+
+        if (event.getTab() == ModCreativeModeTabs.BONELANDS_TAB){
+            event.accept(ModItems.Reinforced_Bone_Shard);
+            event.accept(ModBlocks.REINFORCED_BONE_BLOCK);
+        }
+
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
-    }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

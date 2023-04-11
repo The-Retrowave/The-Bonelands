@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "bonelands:block/r_bone_block_side",
+    "end": "bonelands:block/r_bone_block_top"
+  }
+}
