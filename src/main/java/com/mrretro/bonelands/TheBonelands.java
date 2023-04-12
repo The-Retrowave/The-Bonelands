@@ -82,6 +82,10 @@ public class TheBonelands
 
         if (event.getTab() == ModCreativeModeTabs.BONELANDS_TAB){
             event.accept(ModItems.Reinforced_Bone_Shard);
+            event.accept(ModItems.Raw_Cursed_Gem);
+            event.accept(ModItems.Cursed_Gem);
+            event.accept(ModBlocks.CURSED_ROCK);
+            event.accept(ModBlocks.CURSED_ROCK_ORE);
             event.accept(ModBlocks.REINFORCED_BONE_BLOCK);
         }
 

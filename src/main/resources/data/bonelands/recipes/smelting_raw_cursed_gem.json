@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "bonelands:raw_cursed_gem"
+  },
+  "result": "bonelands:cursed_gem",
+  "experience": 5,
+  "cookingtime": 300
+}

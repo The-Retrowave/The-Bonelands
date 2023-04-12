@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "1#1",
+    "###",
+    "1#1"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "#": {
+      "item": "bonelands:reinforced_bone_shard"
+    }
+  },
+  "result": {
+    "item": "bonelands:reinforced_bone_block"
+  }
+}

@@ -20,6 +20,10 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TheBonelands.MODID);
 public static final RegistryObject<Block> REINFORCED_BONE_BLOCK = registrBlock("reinforced_bone_block",
         () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> CURSED_ROCK = registrBlock("cursed_rock",
+        () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()));
+public static final RegistryObject<Block> CURSED_ROCK_ORE = registrBlock("cursed_rock_ore",
+        () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()));
 
 
 

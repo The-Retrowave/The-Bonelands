@@ -1,5 +1,9 @@
 {
   "item.bonelands.reinforced_bone_shard": "Reinforced Bone Shard",
+  "item.bonelands.raw_cursed_gem": "Raw Cursed Gem",
+  "item.bonelands.cursed_gem": "Cursed Gem",
   "block.bonelands.reinforced_bone_block": "Reinforced Bone Block",
+  "block.bonelands.cursed_rock": "Cursed Rock",
+  "block.bonelands.cursed_rock_ore": "Cursed Gem Ore",
   "creativemodtab.bonelands_tab": "Bonelands Tab"
 }
